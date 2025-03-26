@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "pysperf"
+version = "1.0.0"
+description = "Pyomo Solver Performance Benchmarking Library"
+authors = ["Qi Chen <qichen@andrew.cmu.edu>"]
+license = "BSD-2-Clause"
+readme = "README.md"
+repository = "https://github.com/grossmann-group/pysperf"
+keywords = ["pyomo", "generalized disjunctive programming"]
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+packages = [{include = "pysperf"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Pyomo = "^6.7.1"  # Latest stable version
+pandas = "^2.2.1"  # Latest stable version
+PyYAML = "^6.0.1"  # Latest stable version
+openpyxl = "^3.1.2"  # Latest stable version
+setuptools = "^70.0.0"  # Fixed version for security vulnerability
+
+[tool.poetry.scripts]
+pysperf = "pysperf.__main__:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
