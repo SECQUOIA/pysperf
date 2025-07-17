@@ -1,0 +1,13 @@
+# Development dependencies
+pytest>=6.0.0
+pytest-cov
+flake8
+black
+mypy
+setuptools_scm
+wheel
+build
+
+# Documentation
+sphinx
+sphinx-rtd-theme
