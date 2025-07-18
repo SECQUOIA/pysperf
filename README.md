@@ -1,4 +1,10 @@
 # Pysperf
+
+[![Test](https://github.com/SECQUOIA/pysperf/actions/workflows/test.yml/badge.svg)](https://github.com/SECQUOIA/pysperf/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/SECQUOIA/pysperf/branch/main/graph/badge.svg)](https://codecov.io/gh/SECQUOIA/pysperf)
+[![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![PyPI](https://img.shields.io/pypi/v/pysperf.svg)](https://pypi.org/project/pysperf/)
+
 Pyomo Solver Performance Analysis Library
 
 ## Installation
