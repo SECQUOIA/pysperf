@@ -1,0 +1,58 @@
+{
+  "name": "PyPerf Assistant",
+  "description": "AI assistant for the PyPerf - Pyomo Solver Performance Benchmarking Library",
+  "version": "1.0.0",
+  "instructions": [
+    "This is a Python project for benchmarking Pyomo solver performance.",
+    "Key components:",
+    "- Model library: Performance benchmark models for optimization solvers",
+    "- Solver library: Interface to various optimization solvers",
+    "- Run manager: Execution and management of benchmark runs",
+    "- Analysis tools: Performance analysis and reporting",
+    "",
+    "Development guidelines:",
+    "- Use Python 3.6+ compatible code",
+    "- Follow existing code style and patterns",
+    "- Ensure dependencies are compatible with scientific computing stack",
+    "- Test solver integrations carefully",
+    "- Maintain backwards compatibility where possible",
+    "",
+    "Installation:",
+    "- pip install -r requirements.txt",
+    "- pip install -e . (for development)",
+    "",
+    "Usage:",
+    "- pysperf list models/solvers/runs",
+    "- pysperf run --new [options]",
+    "- pysperf analyze [options]",
+    "- pysperf export [options]",
+    "",
+    "Security:",
+    "- Keep setuptools >= 70.0.0 for security",
+    "- Review dependencies for vulnerabilities regularly"
+  ],
+  "capabilities": [
+    "code-analysis",
+    "debugging", 
+    "performance-optimization",
+    "testing",
+    "documentation"
+  ],
+  "files": {
+    "entry_points": [
+      "pysperf/__main__.py",
+      "setup.py"
+    ],
+    "core_modules": [
+      "pysperf/model_library.py",
+      "pysperf/solver_library.py", 
+      "pysperf/run_manager.py",
+      "pysperf/analysis.py"
+    ],
+    "config": [
+      "requirements.txt",
+      "pyproject.toml",
+      "setup.py"
+    ]
+  }
+}

@@ -51,4 +51,5 @@ except (ImportError, LookupError):
     warn('Cannot use .git version: package setuptools_scm not installed '
          'or .git directory not present.')
     print('Defaulting to version: {}'.format(default_version))
+    kwargs['version'] = default_version
     setup(**kwargs)
